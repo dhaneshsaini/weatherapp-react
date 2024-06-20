@@ -6,7 +6,7 @@ export default function HourCard({ data }) {
         <div className="text-center bg-gradient-to-br from-white/30 to-white/10 rounded-lg p-4">
             <span className="text-xs font-light block uppercase">{getTime(data.dt)}</span>
             <div className="flex justify-center my-3">
-                <WeatherIcon fontSize={36} iconname={data.weather[0].main} />
+                <WeatherIcon fontSize={36} iconname={data.weather[0].icon} />
             </div>
             <h2 className="text-lg font-medium">{Math.round(data.temp)}°</h2>
         </div>

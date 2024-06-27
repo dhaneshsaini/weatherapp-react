@@ -11,7 +11,7 @@ export default function Forcast({ Data, Loaded }) {
             <div className="my-5">
                 <h2 className="text-xl font-medium leading-relaxed">Hourly</h2>
             </div>
-            <div className="grid gap-5 grid-cols-4 md:grid-flow-col mb-5">
+            <div className="grid gap-5 grid-cols-4 md:grid-cols-none md:grid-flow-col mb-5">
                 {Loaded ?
                     skeleton.map((item, i) => <HourCardSkeleton key={i} />)
                     :
